@@ -6,8 +6,9 @@ import './registerServiceWorker'
 Vue.config.productionTip = false
 
 // vant按需引入
-import { Button, Tabbar, TabbarItem, Icon, Row, Col } from 'vant';
-Vue.use(Button).use(Tabbar).use(TabbarItem).use(Icon).use(Row).use(Col)
+import { Button, Tabbar, TabbarItem, Icon, Row, Col, NavBar, Popup, Picker, Search, Swipe, SwipeItem, Lazyload, NoticeBar, Tab, Tabs, List, Cell, CellGroup,
+  Rate,Tag } from 'vant';
+Vue.use(Button).use(Tabbar).use(TabbarItem).use(Icon).use(Row).use(Col).use(NavBar).use(Popup).use(Picker).use(Search).use(Swipe).use(SwipeItem).use(Lazyload).use(NoticeBar).use(Tab).use(Tabs).use(List).use(Cell).use(CellGroup).use(Rate).use(Tag);
 
 
 // 全局组件

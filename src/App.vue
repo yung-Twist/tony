@@ -11,11 +11,12 @@
 </template>
 
 <style lang="less">
-@import url('./utils/reset.less');
-@import url('./utils/base.less');
+@import url('./style/reset.less');
+@import url('./style/base.less');
 
 #app {
     font-family: '微软雅黑', 'Avenir', Helvetica, Arial, sans-serif;
     box-sizing: border-box;
+    padding-bottom: 10vh;
 }
 </style>

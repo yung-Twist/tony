@@ -1,6 +1,6 @@
 <template>
   <div class="News">
-      <Head><p></p></Head>
+      <Head></Head>
       <p>消息</p>
   </div>
 </template>

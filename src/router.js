@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import Home from './views/home/Home.vue'
 
 Vue.use(Router)
 
@@ -23,9 +23,19 @@ export default new Router({
       }
     },
     {
+      path: '/location',
+      name: 'Location',
+      component: () => import('./views/home/location/Location.vue'),
+      meta: {
+        title: '选择定位',
+        keepAlive:true,
+        showtar:false
+      }
+    },
+    {
       path: '/find',
       name: 'Find',
-      component: () => import('./views/Find.vue'),
+      component: () => import('./views/find/Find.vue'),
       meta: {
         title: '发现',
         keepAlive:false,
@@ -35,7 +45,7 @@ export default new Router({
     {
       path: '/news',
       name: 'News',
-      component: () => import('./views/News.vue'),
+      component: () => import('./views/news/News.vue'),
       meta: {
         title: '消息',
         keepAlive:true,
@@ -45,7 +55,7 @@ export default new Router({
     {
       path: '/mine',
       name: 'Mine',
-      component: () => import('./views/Mine.vue'),
+      component: () => import('./views/mine/Mine.vue'),
       meta: {
         title: '我的',
         keepAlive:true,
