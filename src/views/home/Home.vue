@@ -15,10 +15,13 @@ export default {
   methods:{
   },
   mounted(){
+    if(localStorage.getItem('sitedata')){
+      this.$store.state.sitedata = JSON.parse(localStorage.getItem('sitedata'))
+    }
   },
   components: {
-    HomeLogoSite:() =>import('./HomeSite'),
-    HomeSearch:() =>import('./HomeSearch'),
+    HomeLogoSite:() =>import('./location/HomeSite'),
+    HomeSearch:() =>import('./search/HomeSearch'),
     HomeSwiper:() =>import('./HomeSwiper'),
     HomeCallboard:() =>import('./HomeCallboard'),
     HomeClassify:() =>import('./HomeClassify'),

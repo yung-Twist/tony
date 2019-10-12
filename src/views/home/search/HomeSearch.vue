@@ -14,7 +14,7 @@ export default {
   },
   methods:{
     searchStore(){
-      console.log('搜索店铺按钮')
+      this.$router.push('/homeSearchPage')
     }
   },
  }

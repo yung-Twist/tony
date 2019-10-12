@@ -3,7 +3,7 @@
       <div class="home-logo">logo</div>
       <div class="home-site" @click="$router.push('/location')">
           <van-icon name="location-o"  color='#1989fa'/>
-          <p>厦门市集美区</p>
+          <p>{{siteName}}</p>
           <van-icon name="arrow" />
       </div>
   </div>
@@ -15,6 +15,16 @@ export default {
   data() { 
     return {
 
+    }
+  },
+  computed:{
+    siteName(){
+      if(this.$store.state.sitedata.name){
+        let sitedata = this.$store.state.sitedata
+        return sitedata.name
+      }else{
+        return '您的位置'
+      }
     }
   }
  }

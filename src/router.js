@@ -33,6 +33,16 @@ export default new Router({
       }
     },
     {
+      path: '/homeSearchPage',
+      name: 'HomeSearchPage',
+      component: () => import('./views/home/search/HomeSearchPage.vue'),
+      meta: {
+        title: '搜索',
+        keepAlive:true,
+        showtar:false
+      }
+    },
+    {
       path: '/find',
       name: 'Find',
       component: () => import('./views/find/Find.vue'),
