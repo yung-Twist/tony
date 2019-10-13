@@ -43,6 +43,16 @@ export default new Router({
       }
     },
     {
+      path: '/classifyStore',
+      name: 'ClassifyStore',
+      component: () => import('./views/home/classify/ClassifyStore.vue'),
+      meta: {
+        title: '商户',
+        keepAlive:true,
+        showtar:false
+      }
+    },
+    {
       path: '/find',
       name: 'Find',
       component: () => import('./views/find/Find.vue'),

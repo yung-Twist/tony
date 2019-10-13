@@ -14,7 +14,7 @@ Vue.use(Button).use(Tabbar).use(TabbarItem).use(Icon).use(Row).use(Col).use(NavB
 // 全局组件
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
-const requireComponent = require.context('./components',true,/\.vue/)
+const requireComponent = require.context('./components/basecomponents',true,/\.vue/)
 requireComponent.keys().forEach(fileName => {
   // 获取组件配置
   const componentConfig = requireComponent(fileName)

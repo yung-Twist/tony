@@ -24,7 +24,7 @@ export default {
     HomeSearch:() =>import('./search/HomeSearch'),
     HomeSwiper:() =>import('./HomeSwiper'),
     HomeCallboard:() =>import('./HomeCallboard'),
-    HomeClassify:() =>import('./HomeClassify'),
+    HomeClassify:() =>import('./classify/HomeClassify'),
     HomeStore:() =>import('./HomeStore'),
   },
 }

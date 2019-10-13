@@ -1,10 +1,14 @@
 <template>
     <div class="locationMap">
+        <!-- 搜索 -->
         <van-search placeholder="您在哪里?" @input='searchStore' v-model="keyword"/>
+        <!-- 加载 -->
         <div class="loadingAmt"  v-if="loadingMap" style="text-align:center;width:100vw;">
             <van-loading type="spinner" color="#1989fa"/>
         </div>
+        <!-- 地图 -->
         <div id="container" style="width:100vw;height:40vh;"></div>
+        <!-- 搜索结果弹出 -->
         <van-radio-group v-model="radio">
             <van-cell-group>
                 <van-cell :title="item.name" clickable @click='clickStie(item)' :label="item.address" v-for="(item,index) in searchValue" :key="index">
@@ -44,6 +48,7 @@ export default {
         toggle(){
             
         },
+        // 点击搜索的地图
         clickStie(item){
             this.radio = item.id
             this.latitude = item.latLng.lat
@@ -57,6 +62,7 @@ export default {
             var geolocation = new qq.maps.Geolocation("JYLBZ-ZGQ3U-5JFV5-4WUDC-OK676-JVB3E", "建材-小程序");
             geolocation.getIpLocation(this.showPosition, this.showErr);
         },
+        // 地图加载
         showPosition(position) {
             // console.log(position);
             this.latitude = position.lat;
@@ -67,10 +73,12 @@ export default {
             this.searchStore()
             this.loadingMap = false
         },
+        // 地图加载错误回掉
         showErr() {
             console.log("定位失败");
             this.getMyLocation();//定位失败再请求定位，测试使用
         },
+        // 地图初始化
         setMap() {
             let that = this
             //步骤：定义map变量 调用 qq.maps.Map() 构造函数   获取地图显示容器
