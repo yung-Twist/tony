@@ -25,7 +25,7 @@ export default {
     HomeSwiper:() =>import('./HomeSwiper'),
     HomeCallboard:() =>import('./HomeCallboard'),
     HomeClassify:() =>import('./classify/HomeClassify'),
-    HomeStore:() =>import('./HomeStore'),
+    HomeStore:() =>import('./store/HomeStore'),
   },
 }
 </script>

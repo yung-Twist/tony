@@ -1,7 +1,7 @@
 <template>
     <div class='storeInfo'>
         <div class="homeStoreWrap">
-            <div class="homeStoreItem" v-for="(item,index) in storeList" :key="index">
+            <div class="homeStoreItem" v-for="(item,index) in storeList" :key="index" @click="toStoreDetail(item)">
                 <van-row>
                     <van-col span="8">
                         <img :src="item.pic" alt="" class="homeStoreImg">
@@ -44,6 +44,10 @@
             }
         },
         methods:{
+            // 前往店铺详情
+            toStoreDetail(item){
+                this.$router.push('/storeDetail')
+            }
         },
     }
 </script>

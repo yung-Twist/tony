@@ -53,6 +53,46 @@ export default new Router({
       }
     },
     {
+      path: '/storeDetailInfo',
+      name: 'StoreDetailInfo',
+      component: () => import('./views/home/store/StoreDetailInfo.vue'),
+      meta: {
+        title: '商户信息',
+        keepAlive:true,
+        showtar:false
+      }
+    },
+    {
+      path: '/storeDetail',
+      name: 'StoreDetail',
+      component: () => import('./views/home/store/StoreDetail.vue'),
+      meta: {
+        title: '店铺详情',
+        keepAlive:true,
+        showtar:false
+      }
+    },
+    {
+      path: '/storeDetailGoodsInfo',
+      name: 'StoreDetailGoodsInfo',
+      component: () => import('./views/home/store/StoreDetailGoodsInfo.vue'),
+      meta: {
+        title: '商品详情',
+        keepAlive:true,
+        showtar:false
+      }
+    },
+    {
+      path: '/storeTonyDetail',
+      name: 'StoreTonyDetail',
+      component: () => import('./views/home/store/StoreTonyDetail.vue'),
+      meta: {
+        title: '发型师详情',
+        keepAlive:true,
+        showtar:false
+      }
+    },
+    {
       path: '/find',
       name: 'Find',
       component: () => import('./views/find/Find.vue'),

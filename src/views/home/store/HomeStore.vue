@@ -63,7 +63,7 @@ export default {
             ],
             tonyList:[
                 {
-                    avatar:require('../../assets/images/avatar.jpg'),
+                    avatar:require('../../../assets/images/avatar.jpg'),
                     name:'小红',
                     position:'设计师',
                     allOrder:1412,
@@ -75,7 +75,7 @@ export default {
                     lineupNum:5
                 },
                 {
-                    avatar:require('../../assets/images/avatar.jpg'),
+                    avatar:require('../../../assets/images/avatar.jpg'),
                     name:'小红',
                     position:'设计师',
                     allOrder:1412,
@@ -87,7 +87,7 @@ export default {
                     lineupNum:5
                 },
                 {
-                    avatar:require('../../assets/images/avatar.jpg'),
+                    avatar:require('../../../assets/images/avatar.jpg'),
                     name:'小红',
                     position:'设计师',
                     allOrder:1412,
@@ -105,8 +105,8 @@ export default {
         }
     },
     components:{
-        StoreInfo:() => import('../../components/StoreInfo'),
-        Hairdresser:() => import('../../components//Hairdresser')
+        StoreInfo:() => import('../../../components/StoreInfo'),
+        Hairdresser:() => import('../../../components//Hairdresser')
     },
     methods:{
         onLoad() {
@@ -122,7 +122,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import url('../../style/base.less');
+@import url('../../../style/base.less');
 .homeStore {
     padding: 0 .5rem;
     

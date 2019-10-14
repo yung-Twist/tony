@@ -7,8 +7,8 @@ Vue.config.productionTip = false
 
 // vant按需引入
 import { Button, Tabbar, TabbarItem, Icon, Row, Col, NavBar, Popup, Picker, Search, Swipe, SwipeItem, Lazyload, NoticeBar, Tab, Tabs, List, Cell, CellGroup,
-  Rate,Tag,Checkbox, CheckboxGroup,RadioGroup, Radio,Toast, DropdownMenu, DropdownItem, Grid, GridItem, Loading } from 'vant';
-Vue.use(Button).use(Tabbar).use(TabbarItem).use(Icon).use(Row).use(Col).use(NavBar).use(Popup).use(Picker).use(Search).use(Swipe).use(SwipeItem).use(Lazyload).use(NoticeBar).use(Tab).use(Tabs).use(List).use(Cell).use(CellGroup).use(Rate).use(Tag).use(Checkbox).use(CheckboxGroup).use(RadioGroup).use(Radio).use(Toast).use(DropdownMenu).use(DropdownItem).use(Grid).use(GridItem).use(Loading);
+  Rate,Tag,Checkbox, CheckboxGroup,RadioGroup, Radio,Toast, DropdownMenu, DropdownItem, Grid, GridItem, Loading, ImagePreview, SubmitBar } from 'vant';
+Vue.use(Button).use(Tabbar).use(TabbarItem).use(Icon).use(Row).use(Col).use(NavBar).use(Popup).use(Picker).use(Search).use(Swipe).use(SwipeItem).use(Lazyload).use(NoticeBar).use(Tab).use(Tabs).use(List).use(Cell).use(CellGroup).use(Rate).use(Tag).use(Checkbox).use(CheckboxGroup).use(RadioGroup).use(Radio).use(Toast).use(DropdownMenu).use(DropdownItem).use(Grid).use(GridItem).use(Loading).use(ImagePreview).use(SubmitBar);
 
 
 // 全局组件

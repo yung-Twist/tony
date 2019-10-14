@@ -21,7 +21,7 @@
                         <van-col span="6">
                             <div class="homeTonyItemStatus">
                                 <p>总接单:{{item.allOrder}}</p>
-                                <van-button round type="primary" size="small" v-if="item.isworking">立即预约</van-button>
+                                <van-button round type="primary" size="small" v-if="item.isworking" @click="toTonyDetail">立即预约</van-button>
                                 <van-button round color="#444" size="small" v-if="!item.isworking">休息中</van-button>
                             </div>
                         </van-col>
@@ -41,6 +41,10 @@
             }
         },
         methods:{
+            // 前往发型师详情
+            toTonyDetail(){
+                this.$router.push('/storeTonyDetail')
+            }
         },
     }
 </script>
