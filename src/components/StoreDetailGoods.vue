@@ -16,7 +16,7 @@
                             </div>
                             <p>已售:{{item.hasSell}}</p>
                         </div>
-                        <van-tag plain type="warning">{{item.customer}}人正在剪发</van-tag>
+                        <van-tag plain type="warning" v-if="item.customer">{{item.customer}}人正在剪发</van-tag>
                         <div class="StoreDetailItemPrice">
                             <p>￥{{item.price}}</p>
                             <p>￥{{item.originPrice}}</p>

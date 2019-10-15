@@ -33,6 +33,16 @@ export default new Router({
       }
     },
     {
+      path: '/testPage',
+      name: 'TestPage',
+      component: () => import('./views/TestPage'),
+      meta: {
+        title: '测试页',
+        keepAlive:true,
+        showtar:false
+      }
+    },
+    {
       path: '/homeSearchPage',
       name: 'HomeSearchPage',
       component: () => import('./views/home/search/HomeSearchPage.vue'),
@@ -88,6 +98,16 @@ export default new Router({
       component: () => import('./views/home/store/StoreTonyDetail.vue'),
       meta: {
         title: '发型师详情',
+        keepAlive:true,
+        showtar:false
+      }
+    },
+    {
+      path: '/storeBuyTicket',
+      name: 'StoreBuyTicket',
+      component: () => import('./views/home/store/StoreBuyTicket.vue'),
+      meta: {
+        title: '在线购票',
         keepAlive:true,
         showtar:false
       }
